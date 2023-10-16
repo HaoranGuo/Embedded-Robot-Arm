@@ -1,0 +1,5 @@
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" "-DCMAKE_C_COMPILER=C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.3 rel1/bin/arm-none-eabi-gcc.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.3 rel1/bin/arm-none-eabi-g++.exe" -G Ninja -S C:\Users\Haoran\Prj\CLionProjects\EmbeddedRobotArm -B C:\Users\Haoran\Prj\CLionProjects\EmbeddedRobotArm\cmake-build-debug-mingw-arm
+-- Minimal optimization, debug info included
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Haoran/Prj/CLionProjects/EmbeddedRobotArm/cmake-build-debug-mingw-arm

@@ -1,0 +1,3 @@
+C:/Users/Haoran/Prj/CLionProjects/EmbeddedRobotArm/cmake-build-debug-mingw-arm/CMakeFiles/EmbeddedRobotArm.elf.dir
+C:/Users/Haoran/Prj/CLionProjects/EmbeddedRobotArm/cmake-build-debug-mingw-arm/CMakeFiles/edit_cache.dir
+C:/Users/Haoran/Prj/CLionProjects/EmbeddedRobotArm/cmake-build-debug-mingw-arm/CMakeFiles/rebuild_cache.dir
