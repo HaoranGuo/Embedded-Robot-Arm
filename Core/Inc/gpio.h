@@ -41,6 +41,10 @@ extern "C" {
 #define LED1_OFF() HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_SET)
 #define LED1_TOGGLE() HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_3)
 
+#define BEEP_ON() HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET)
+#define BEEP_OFF() HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET)
+#define BEEP_TOGGLE() HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1)
+
 /* USER CODE END Private defines */
 
 void MX_GPIO_Init(void);

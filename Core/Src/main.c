@@ -284,7 +284,9 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
+    BEEP_ON();
     servo_Init();
+    BEEP_OFF();
 
     uint8_t TX_Str1[] = "\r\nInit Successfully\r\n";
     uint8_t TX_Str2[] = "\r\nType: \"+FUNCTION,PARAMETER1,PARAMETER2,...\" to command the board. E.g.\"+LED,1,1,\" can open the LED1.\r\n";

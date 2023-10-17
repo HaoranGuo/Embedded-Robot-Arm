@@ -1260,7 +1260,7 @@ LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb
                 0x08000000                g_pfnVectors
                 0x080001e4                        . = ALIGN (0x4)
 
-.text           0x080001e8     0x3520
+.text           0x080001e8     0x3554
                 0x080001e8                        . = ALIGN (0x4)
  *(.text)
  .text          0x080001e8      0x378 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
@@ -1315,418 +1315,417 @@ LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb
  .text.frame_dummy
                 0x08000c28       0x24 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  .text.MX_GPIO_Init
-                0x08000c4c       0x88 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
+                0x08000c4c       0xa4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
                 0x08000c4c                MX_GPIO_Init
- *fill*         0x08000cd4        0x4 
  .text.user_Function
-                0x08000cd8      0x6a8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
-                0x08000cd8                user_Function
+                0x08000cf0      0x6a8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+                0x08000cf0                user_Function
  .text.Error_Handler
-                0x08001380        0x4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
-                0x08001380                Error_Handler
+                0x08001398        0x4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+                0x08001398                Error_Handler
  .text.SystemClock_Config
-                0x08001384       0x64 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
-                0x08001384                SystemClock_Config
- .text.main     0x080013e8       0xa8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
-                0x080013e8                main
+                0x0800139c       0x64 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+                0x0800139c                SystemClock_Config
+ .text.main     0x08001400       0xc4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+                0x08001400                main
  .text.HAL_MspInit
-                0x08001490       0x44 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08001490                HAL_MspInit
+                0x080014c4       0x44 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x080014c4                HAL_MspInit
  .text.NMI_Handler
-                0x080014d4        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014d4                NMI_Handler
+                0x08001508        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001508                NMI_Handler
  .text.HardFault_Handler
-                0x080014d6        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014d6                HardFault_Handler
+                0x0800150a        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800150a                HardFault_Handler
  .text.MemManage_Handler
-                0x080014d8        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014d8                MemManage_Handler
+                0x0800150c        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800150c                MemManage_Handler
  .text.BusFault_Handler
-                0x080014da        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014da                BusFault_Handler
+                0x0800150e        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800150e                BusFault_Handler
  .text.UsageFault_Handler
-                0x080014dc        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014dc                UsageFault_Handler
+                0x08001510        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001510                UsageFault_Handler
  .text.SVC_Handler
-                0x080014de        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014de                SVC_Handler
+                0x08001512        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001512                SVC_Handler
  .text.DebugMon_Handler
-                0x080014e0        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014e0                DebugMon_Handler
+                0x08001514        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001514                DebugMon_Handler
  .text.PendSV_Handler
-                0x080014e2        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014e2                PendSV_Handler
+                0x08001516        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001516                PendSV_Handler
  .text.SysTick_Handler
-                0x080014e4        0x8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014e4                SysTick_Handler
+                0x08001518        0x8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001518                SysTick_Handler
  .text.USART1_IRQHandler
-                0x080014ec       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080014ec                USART1_IRQHandler
+                0x08001520       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001520                USART1_IRQHandler
  .text.SystemInit
-                0x080014fc        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x080014fc                SystemInit
- *fill*         0x080014fe        0x2 
+                0x08001530        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x08001530                SystemInit
+ *fill*         0x08001532        0x2 
  .text.HAL_TIM_Base_MspInit
-                0x08001500       0x6c CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
-                0x08001500                HAL_TIM_Base_MspInit
+                0x08001534       0x6c CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+                0x08001534                HAL_TIM_Base_MspInit
  .text.HAL_TIM_MspPostInit
-                0x0800156c       0xd8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
-                0x0800156c                HAL_TIM_MspPostInit
+                0x080015a0       0xd8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+                0x080015a0                HAL_TIM_MspPostInit
  .text.MX_TIM2_Init
-                0x08001644       0xc4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
-                0x08001644                MX_TIM2_Init
+                0x08001678       0xc4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+                0x08001678                MX_TIM2_Init
  .text.MX_TIM3_Init
-                0x08001708       0xf0 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
-                0x08001708                MX_TIM3_Init
+                0x0800173c       0xf0 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+                0x0800173c                MX_TIM3_Init
  .text.MX_TIM4_Init
-                0x080017f8       0xc4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
-                0x080017f8                MX_TIM4_Init
+                0x0800182c       0xc4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+                0x0800182c                MX_TIM4_Init
  .text.servo_Move
-                0x080018bc       0x5c CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
-                0x080018bc                servo_Move
+                0x080018f0       0x5c CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+                0x080018f0                servo_Move
  .text.servo_Move2Goal
-                0x08001918       0x6c CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
-                0x08001918                servo_Move2Goal
+                0x0800194c       0x6c CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+                0x0800194c                servo_Move2Goal
  .text.servo_Init
-                0x08001984       0x84 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
-                0x08001984                servo_Init
+                0x080019b8       0x84 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+                0x080019b8                servo_Init
  .text.MX_USART1_UART_Init
-                0x08001a08       0x34 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
-                0x08001a08                MX_USART1_UART_Init
+                0x08001a3c       0x34 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
+                0x08001a3c                MX_USART1_UART_Init
  .text.HAL_UART_MspInit
-                0x08001a3c       0x88 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
-                0x08001a3c                HAL_UART_MspInit
+                0x08001a70       0x88 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
+                0x08001a70                HAL_UART_MspInit
  .text.HAL_UART_RxCpltCallback
-                0x08001ac4       0x88 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
-                0x08001ac4                HAL_UART_RxCpltCallback
+                0x08001af8       0x88 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
+                0x08001af8                HAL_UART_RxCpltCallback
  .text.Reset_Handler
-                0x08001b4c       0x48 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
-                0x08001b4c                Reset_Handler
+                0x08001b80       0x48 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
+                0x08001b80                Reset_Handler
  .text.Default_Handler
-                0x08001b94        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
-                0x08001b94                RTC_Alarm_IRQHandler
-                0x08001b94                EXTI2_IRQHandler
-                0x08001b94                TIM8_TRG_COM_IRQHandler
-                0x08001b94                TIM8_CC_IRQHandler
-                0x08001b94                TIM1_CC_IRQHandler
-                0x08001b94                TIM6_IRQHandler
-                0x08001b94                PVD_IRQHandler
-                0x08001b94                SDIO_IRQHandler
-                0x08001b94                EXTI3_IRQHandler
-                0x08001b94                EXTI0_IRQHandler
-                0x08001b94                I2C2_EV_IRQHandler
-                0x08001b94                ADC1_2_IRQHandler
-                0x08001b94                SPI1_IRQHandler
-                0x08001b94                TAMPER_IRQHandler
-                0x08001b94                TIM8_UP_IRQHandler
-                0x08001b94                DMA2_Channel2_IRQHandler
-                0x08001b94                DMA1_Channel4_IRQHandler
-                0x08001b94                USART3_IRQHandler
-                0x08001b94                RTC_IRQHandler
-                0x08001b94                DMA1_Channel7_IRQHandler
-                0x08001b94                CAN1_RX1_IRQHandler
-                0x08001b94                UART5_IRQHandler
-                0x08001b94                ADC3_IRQHandler
-                0x08001b94                TIM4_IRQHandler
-                0x08001b94                DMA2_Channel1_IRQHandler
-                0x08001b94                I2C1_EV_IRQHandler
-                0x08001b94                DMA1_Channel6_IRQHandler
-                0x08001b94                UART4_IRQHandler
-                0x08001b94                TIM3_IRQHandler
-                0x08001b94                RCC_IRQHandler
-                0x08001b94                TIM1_TRG_COM_IRQHandler
-                0x08001b94                DMA1_Channel1_IRQHandler
-                0x08001b94                Default_Handler
-                0x08001b94                EXTI15_10_IRQHandler
-                0x08001b94                TIM7_IRQHandler
-                0x08001b94                TIM5_IRQHandler
-                0x08001b94                EXTI9_5_IRQHandler
-                0x08001b94                SPI2_IRQHandler
-                0x08001b94                DMA1_Channel5_IRQHandler
-                0x08001b94                EXTI4_IRQHandler
-                0x08001b94                USB_LP_CAN1_RX0_IRQHandler
-                0x08001b94                USB_HP_CAN1_TX_IRQHandler
-                0x08001b94                DMA1_Channel3_IRQHandler
-                0x08001b94                FSMC_IRQHandler
-                0x08001b94                TIM1_UP_IRQHandler
-                0x08001b94                WWDG_IRQHandler
-                0x08001b94                TIM2_IRQHandler
-                0x08001b94                TIM1_BRK_IRQHandler
-                0x08001b94                EXTI1_IRQHandler
-                0x08001b94                DMA2_Channel4_5_IRQHandler
-                0x08001b94                USART2_IRQHandler
-                0x08001b94                I2C2_ER_IRQHandler
-                0x08001b94                DMA1_Channel2_IRQHandler
-                0x08001b94                TIM8_BRK_IRQHandler
-                0x08001b94                CAN1_SCE_IRQHandler
-                0x08001b94                FLASH_IRQHandler
-                0x08001b94                SPI3_IRQHandler
-                0x08001b94                I2C1_ER_IRQHandler
-                0x08001b94                USBWakeUp_IRQHandler
-                0x08001b94                DMA2_Channel3_IRQHandler
- *fill*         0x08001b96        0x2 
+                0x08001bc8        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
+                0x08001bc8                RTC_Alarm_IRQHandler
+                0x08001bc8                EXTI2_IRQHandler
+                0x08001bc8                TIM8_TRG_COM_IRQHandler
+                0x08001bc8                TIM8_CC_IRQHandler
+                0x08001bc8                TIM1_CC_IRQHandler
+                0x08001bc8                TIM6_IRQHandler
+                0x08001bc8                PVD_IRQHandler
+                0x08001bc8                SDIO_IRQHandler
+                0x08001bc8                EXTI3_IRQHandler
+                0x08001bc8                EXTI0_IRQHandler
+                0x08001bc8                I2C2_EV_IRQHandler
+                0x08001bc8                ADC1_2_IRQHandler
+                0x08001bc8                SPI1_IRQHandler
+                0x08001bc8                TAMPER_IRQHandler
+                0x08001bc8                TIM8_UP_IRQHandler
+                0x08001bc8                DMA2_Channel2_IRQHandler
+                0x08001bc8                DMA1_Channel4_IRQHandler
+                0x08001bc8                USART3_IRQHandler
+                0x08001bc8                RTC_IRQHandler
+                0x08001bc8                DMA1_Channel7_IRQHandler
+                0x08001bc8                CAN1_RX1_IRQHandler
+                0x08001bc8                UART5_IRQHandler
+                0x08001bc8                ADC3_IRQHandler
+                0x08001bc8                TIM4_IRQHandler
+                0x08001bc8                DMA2_Channel1_IRQHandler
+                0x08001bc8                I2C1_EV_IRQHandler
+                0x08001bc8                DMA1_Channel6_IRQHandler
+                0x08001bc8                UART4_IRQHandler
+                0x08001bc8                TIM3_IRQHandler
+                0x08001bc8                RCC_IRQHandler
+                0x08001bc8                TIM1_TRG_COM_IRQHandler
+                0x08001bc8                DMA1_Channel1_IRQHandler
+                0x08001bc8                Default_Handler
+                0x08001bc8                EXTI15_10_IRQHandler
+                0x08001bc8                TIM7_IRQHandler
+                0x08001bc8                TIM5_IRQHandler
+                0x08001bc8                EXTI9_5_IRQHandler
+                0x08001bc8                SPI2_IRQHandler
+                0x08001bc8                DMA1_Channel5_IRQHandler
+                0x08001bc8                EXTI4_IRQHandler
+                0x08001bc8                USB_LP_CAN1_RX0_IRQHandler
+                0x08001bc8                USB_HP_CAN1_TX_IRQHandler
+                0x08001bc8                DMA1_Channel3_IRQHandler
+                0x08001bc8                FSMC_IRQHandler
+                0x08001bc8                TIM1_UP_IRQHandler
+                0x08001bc8                WWDG_IRQHandler
+                0x08001bc8                TIM2_IRQHandler
+                0x08001bc8                TIM1_BRK_IRQHandler
+                0x08001bc8                EXTI1_IRQHandler
+                0x08001bc8                DMA2_Channel4_5_IRQHandler
+                0x08001bc8                USART2_IRQHandler
+                0x08001bc8                I2C2_ER_IRQHandler
+                0x08001bc8                DMA1_Channel2_IRQHandler
+                0x08001bc8                TIM8_BRK_IRQHandler
+                0x08001bc8                CAN1_SCE_IRQHandler
+                0x08001bc8                FLASH_IRQHandler
+                0x08001bc8                SPI3_IRQHandler
+                0x08001bc8                I2C1_ER_IRQHandler
+                0x08001bc8                USBWakeUp_IRQHandler
+                0x08001bc8                DMA2_Channel3_IRQHandler
+ *fill*         0x08001bca        0x2 
  .text.HAL_InitTick
-                0x08001b98       0x4c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08001b98                HAL_InitTick
+                0x08001bcc       0x4c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001bcc                HAL_InitTick
  .text.HAL_Init
-                0x08001be4       0x24 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08001be4                HAL_Init
+                0x08001c18       0x24 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001c18                HAL_Init
  .text.HAL_IncTick
-                0x08001c08       0x18 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08001c08                HAL_IncTick
+                0x08001c3c       0x18 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001c3c                HAL_IncTick
  .text.HAL_GetTick
-                0x08001c20        0xc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08001c20                HAL_GetTick
+                0x08001c54        0xc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001c54                HAL_GetTick
  .text.HAL_Delay
-                0x08001c2c       0x28 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08001c2c                HAL_Delay
+                0x08001c60       0x28 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001c60                HAL_Delay
  .text.__NVIC_SetPriority
-                0x08001c54       0x28 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001c88       0x28 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08001c7c       0x3e CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- *fill*         0x08001cba        0x2 
+                0x08001cb0       0x3e CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ *fill*         0x08001cee        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08001cbc       0x24 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001cbc                HAL_NVIC_SetPriorityGrouping
+                0x08001cf0       0x24 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001cf0                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08001ce0       0x20 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001ce0                HAL_NVIC_SetPriority
+                0x08001d14       0x20 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001d14                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08001d00       0x1c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001d00                HAL_NVIC_EnableIRQ
+                0x08001d34       0x1c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001d34                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x08001d1c       0x28 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001d1c                HAL_SYSTICK_Config
+                0x08001d50       0x28 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001d50                HAL_SYSTICK_Config
  .text.HAL_DMA_Abort
-                0x08001d44       0x46 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08001d44                HAL_DMA_Abort
- *fill*         0x08001d8a        0x2 
+                0x08001d78       0x46 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08001d78                HAL_DMA_Abort
+ *fill*         0x08001dbe        0x2 
  .text.HAL_DMA_Abort_IT
-                0x08001d8c      0x16c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08001d8c                HAL_DMA_Abort_IT
+                0x08001dc0      0x16c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08001dc0                HAL_DMA_Abort_IT
  .text.HAL_GPIO_Init
-                0x08001ef8      0x238 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08001ef8                HAL_GPIO_Init
+                0x08001f2c      0x238 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08001f2c                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08002130        0xc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08002130                HAL_GPIO_WritePin
+                0x08002164        0xc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08002164                HAL_GPIO_WritePin
  .text.RCC_Delay
-                0x0800213c       0x2c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002170       0x2c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x08002168      0x410 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002168                HAL_RCC_OscConfig
+                0x0800219c      0x410 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800219c                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08002578       0x54 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002578                HAL_RCC_GetSysClockFreq
+                0x080025ac       0x54 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080025ac                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x080025cc      0x16c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080025cc                HAL_RCC_ClockConfig
+                0x08002600      0x16c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002600                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08002738        0xc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002738                HAL_RCC_GetHCLKFreq
+                0x0800276c        0xc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800276c                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08002744       0x20 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002744                HAL_RCC_GetPCLK1Freq
+                0x08002778       0x20 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002778                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08002764       0x20 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002764                HAL_RCC_GetPCLK2Freq
+                0x08002798       0x20 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002798                HAL_RCC_GetPCLK2Freq
  .text.TIM_OC1_SetConfig
-                0x08002784       0x70 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080027b8       0x70 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_OC3_SetConfig
-                0x080027f4       0x70 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002828       0x70 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x08002864       0x50 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002898       0x50 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI1_ConfigInputStage
-                0x080028b4       0x24 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080028e8       0x24 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x080028d8       0x26 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800290c       0x26 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x080028fe       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002932       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_MspInit
-                0x0800290e        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x0800290e                HAL_TIM_PWM_MspInit
+                0x08002942        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002942                HAL_TIM_PWM_MspInit
  .text.TIM_Base_SetConfig
-                0x08002910       0x98 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002910                TIM_Base_SetConfig
+                0x08002944       0x98 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002944                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x080029a8       0x58 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080029a8                HAL_TIM_Base_Init
+                0x080029dc       0x58 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080029dc                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x08002a00       0x58 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002a00                HAL_TIM_PWM_Init
+                0x08002a34       0x58 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002a34                HAL_TIM_PWM_Init
  .text.TIM_OC2_SetConfig
-                0x08002a58       0x70 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002a58                TIM_OC2_SetConfig
+                0x08002a8c       0x70 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002a8c                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x08002ac8       0xdc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002ac8                HAL_TIM_PWM_ConfigChannel
+                0x08002afc       0xdc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002afc                HAL_TIM_PWM_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x08002ba4       0x18 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002ba4                TIM_ETR_SetConfig
+                0x08002bd8       0x18 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002bd8                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x08002bbc       0xfe CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002bbc                HAL_TIM_ConfigClockSource
+                0x08002bf0       0xfe CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002bf0                HAL_TIM_ConfigClockSource
  .text.TIM_CCxChannelCmd
-                0x08002cba       0x1e CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002cba                TIM_CCxChannelCmd
+                0x08002cee       0x1e CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002cee                TIM_CCxChannelCmd
  .text.HAL_TIM_PWM_Start
-                0x08002cd8       0xf4 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002cd8                HAL_TIM_PWM_Start
+                0x08002d0c       0xf4 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002d0c                HAL_TIM_PWM_Start
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08002dcc       0x7c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08002dcc                HAL_TIMEx_MasterConfigSynchronization
+                0x08002e00       0x7c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08002e00                HAL_TIMEx_MasterConfigSynchronization
  .text.UART_EndRxTransfer
-                0x08002e48       0x5c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002e7c       0x5c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_Transmit_IT
-                0x08002ea4       0x60 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002ed8       0x60 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x08002f04       0x94 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002f38       0x94 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_WaitOnFlagUntilTimeout
-                0x08002f98       0x84 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002fcc       0x84 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_Init
-                0x0800301c       0x60 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800301c                HAL_UART_Init
+                0x08003050       0x60 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08003050                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x0800307c       0xbe CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800307c                HAL_UART_Transmit
+                0x080030b0       0xbe CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x080030b0                HAL_UART_Transmit
  .text.HAL_UART_TxCpltCallback
-                0x0800313a        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800313a                HAL_UART_TxCpltCallback
+                0x0800316e        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800316e                HAL_UART_TxCpltCallback
  .text.UART_EndTransmit_IT
-                0x0800313c       0x1a CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08003170       0x1a CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_ErrorCallback
-                0x08003156        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08003156                HAL_UART_ErrorCallback
+                0x0800318a        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800318a                HAL_UART_ErrorCallback
  .text.UART_DMAAbortOnError
-                0x08003158       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800318c       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UARTEx_RxEventCallback
-                0x08003168        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08003168                HAL_UARTEx_RxEventCallback
+                0x0800319c        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800319c                HAL_UARTEx_RxEventCallback
  .text.UART_Receive_IT
-                0x0800316a       0xe6 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800319e       0xe6 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_IRQHandler
-                0x08003250      0x284 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08003250                HAL_UART_IRQHandler
+                0x08003284      0x284 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08003284                HAL_UART_IRQHandler
  .text.UART_Start_Receive_IT
-                0x080034d4       0x36 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x080034d4                UART_Start_Receive_IT
+                0x08003508       0x36 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08003508                UART_Start_Receive_IT
  .text.HAL_UART_Receive_IT
-                0x0800350a       0x26 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800350a                HAL_UART_Receive_IT
- .text.memset   0x08003530       0xa0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
-                0x08003530                memset
+                0x0800353e       0x26 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800353e                HAL_UART_Receive_IT
+ .text.memset   0x08003564       0xa0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
+                0x08003564                memset
  .text.__libc_init_array
-                0x080035d0       0x50 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
-                0x080035d0                __libc_init_array
+                0x08003604       0x50 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+                0x08003604                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x08003620        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x08003620                __retarget_lock_acquire_recursive
+                0x08003654        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x08003654                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08003624        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x08003624                __retarget_lock_release_recursive
+                0x08003658        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x08003658                __retarget_lock_release_recursive
  .text.startup.register_fini
-                0x08003628       0x14 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
- .text.atexit   0x0800363c        0xc c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
-                0x0800363c                atexit
+                0x0800365c       0x14 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .text.atexit   0x08003670        0xc c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+                0x08003670                atexit
  .text.__libc_fini_array
-                0x08003648       0x28 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
-                0x08003648                __libc_fini_array
+                0x0800367c       0x28 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+                0x0800367c                __libc_fini_array
  .text.__register_exitproc
-                0x08003670       0x80 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
-                0x08003670                __register_exitproc
+                0x080036a4       0x80 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+                0x080036a4                __register_exitproc
  *(.glue_7)
- .glue_7        0x080036f0        0x0 linker stubs
+ .glue_7        0x08003724        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080036f0        0x0 linker stubs
+ .glue_7t       0x08003724        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080036f0        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x08003724        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x080036f0        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x080036f0                _init
- .init          0x080036f4        0x8 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x08003724        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x08003724                _init
+ .init          0x08003728        0x8 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x080036fc        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x080036fc                _fini
- .fini          0x08003700        0x8 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
-                0x08003708                        . = ALIGN (0x4)
-                0x08003708                        _etext = .
+ .fini          0x08003730        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x08003730                _fini
+ .fini          0x08003734        0x8 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+                0x0800373c                        . = ALIGN (0x4)
+                0x0800373c                        _etext = .
 
-.vfp11_veneer   0x08003708        0x0
- .vfp11_veneer  0x08003708        0x0 linker stubs
+.vfp11_veneer   0x0800373c        0x0
+ .vfp11_veneer  0x0800373c        0x0 linker stubs
 
-.v4_bx          0x08003708        0x0
- .v4_bx         0x08003708        0x0 linker stubs
+.v4_bx          0x0800373c        0x0
+ .v4_bx         0x0800373c        0x0 linker stubs
 
-.iplt           0x08003708        0x0
- .iplt          0x08003708        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x0800373c        0x0
+ .iplt          0x0800373c        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08003708      0x1e0
-                0x08003708                        . = ALIGN (0x4)
+.rodata         0x0800373c      0x1e0
+                0x0800373c                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.user_Function.str1.4
-                0x08003708      0x130 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+                0x0800373c      0x130 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
  .rodata.main.str1.4
-                0x08003838       0x81 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
- *fill*         0x080038b9        0x3 
+                0x0800386c       0x81 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+ *fill*         0x080038ed        0x3 
  .rodata.APBPrescTable
-                0x080038bc        0x8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x080038bc                APBPrescTable
+                0x080038f0        0x8 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x080038f0                APBPrescTable
  .rodata.AHBPrescTable
-                0x080038c4       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x080038c4                AHBPrescTable
+                0x080038f8       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x080038f8                AHBPrescTable
  .rodata.aPredivFactorTable.0
-                0x080038d4        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x080038d6        0x2 
+                0x08003908        0x2 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x0800390a        0x2 
  .rodata.aPLLMULFactorTable.1
-                0x080038d8       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080038e8                        . = ALIGN (0x4)
+                0x0800390c       0x10 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800391c                        . = ALIGN (0x4)
 
-.ARM.extab      0x080038e8        0x0
-                0x080038e8                        . = ALIGN (0x4)
+.ARM.extab      0x0800391c        0x0
+                0x0800391c                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080038e8                        . = ALIGN (0x4)
+                0x0800391c                        . = ALIGN (0x4)
 
-.ARM            0x080038e8        0x8
-                0x080038e8                        . = ALIGN (0x4)
-                0x080038e8                        __exidx_start = .
+.ARM            0x0800391c        0x8
+                0x0800391c                        . = ALIGN (0x4)
+                0x0800391c                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x080038e8        0x8 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
-                0x080038f0                        __exidx_end = .
-                0x080038f0                        . = ALIGN (0x4)
+ .ARM.exidx     0x0800391c        0x8 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
+                0x08003924                        __exidx_end = .
+                0x08003924                        . = ALIGN (0x4)
 
-.rel.dyn        0x080038f0        0x0
- .rel.iplt      0x080038f0        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x08003924        0x0
+ .rel.iplt      0x08003924        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.preinit_array  0x080038f0        0x0
-                0x080038f0                        . = ALIGN (0x4)
-                0x080038f0                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08003924        0x0
+                0x08003924                        . = ALIGN (0x4)
+                0x08003924                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080038f0                        PROVIDE (__preinit_array_end = .)
-                0x080038f0                        . = ALIGN (0x4)
+                0x08003924                        PROVIDE (__preinit_array_end = .)
+                0x08003924                        . = ALIGN (0x4)
 
-.init_array     0x080038f0        0x8
-                0x080038f0                        . = ALIGN (0x4)
-                0x080038f0                        PROVIDE (__init_array_start = .)
+.init_array     0x08003924        0x8
+                0x08003924                        . = ALIGN (0x4)
+                0x08003924                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x080038f0        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x08003924        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x080038f4        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x080038f8                        PROVIDE (__init_array_end = .)
-                0x080038f8                        . = ALIGN (0x4)
+ .init_array    0x08003928        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800392c                        PROVIDE (__init_array_end = .)
+                0x0800392c                        . = ALIGN (0x4)
 
-.fini_array     0x080038f8        0x4
-                0x080038f8                        . = ALIGN (0x4)
-                0x080038f8                        PROVIDE (__fini_array_start = .)
+.fini_array     0x0800392c        0x4
+                0x0800392c                        . = ALIGN (0x4)
+                0x0800392c                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080038f8        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x080038fc                        PROVIDE (__fini_array_end = .)
-                0x080038fc                        . = ALIGN (0x4)
-                0x080038fc                        _sidata = LOADADDR (.data)
+ .fini_array    0x0800392c        0x4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08003930                        PROVIDE (__fini_array_end = .)
+                0x08003930                        . = ALIGN (0x4)
+                0x08003930                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x10 load address 0x080038fc
+.data           0x20000000       0x10 load address 0x08003930
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -1750,17 +1749,17 @@ LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb
                 0x20000010                        _edata = .
 
 .tm_clone_table
-                0x20000010        0x0 load address 0x0800390c
+                0x20000010        0x0 load address 0x08003940
  .tm_clone_table
                 0x20000010        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000010        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtend.o
 
-.igot.plt       0x20000010        0x0 load address 0x0800390c
+.igot.plt       0x20000010        0x0 load address 0x08003940
  .igot.plt      0x20000010        0x0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x20000010                        . = ALIGN (0x4)
 
-.bss            0x20000010      0x3bc load address 0x0800390c
+.bss            0x20000010      0x3bc load address 0x08003940
                 0x20000010                        _sbss = .
                 0x20000010                        __bss_start__ = _sbss
  *(.bss)
@@ -1810,7 +1809,7 @@ LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb
                 0x200003cc                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200003cc      0x604 load address 0x0800390c
+                0x200003cc      0x604 load address 0x08003940
                 0x200003d0                        . = ALIGN (0x8)
  *fill*         0x200003cc        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -1899,23 +1898,23 @@ LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb
 LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libm.a
 LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0xff6c
- .debug_info    0x00000000      0x307 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x00000307     0x1274 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
- .debug_info    0x0000157b      0x1f4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x0000176f      0x603 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x00001d72      0x22d CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_info    0x00001f9f     0x113f CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
- .debug_info    0x000030de      0xb56 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x00003c34       0x30 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
- .debug_info    0x00003c64      0x808 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x0000446c      0xd13 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x0000517f      0x7da CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_info    0x00005959      0x604 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x00005f5d      0x9c7 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x00006924     0x3b74 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_info    0x0000a498     0x1a88 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_info    0x0000bf20     0x404c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+.debug_info     0x00000000     0xffe1
+ .debug_info    0x00000000      0x340 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
+ .debug_info    0x00000340     0x12b0 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x000015f0      0x1f4 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x000017e4      0x603 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x00001de7      0x22d CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_info    0x00002014     0x113f CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+ .debug_info    0x00003153      0xb56 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x00003ca9       0x30 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
+ .debug_info    0x00003cd9      0x808 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x000044e1      0xd13 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x000051f4      0x7da CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_info    0x000059ce      0x604 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x00005fd2      0x9c7 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x00006999     0x3b74 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_info    0x0000a50d     0x1a88 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_info    0x0000bf95     0x404c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 
 .debug_abbrev   0x00000000     0x219d
  .debug_abbrev  0x00000000      0x151 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
@@ -2004,23 +2003,23 @@ LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb
  .debug_rnglists
                 0x000007fd      0x1a1 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 
-.debug_line     0x00000000     0xfa51
- .debug_line    0x00000000      0x233 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x00000233      0xb83 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
- .debug_line    0x00000db6      0x1a5 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x00000f5b      0x347 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x000012a2      0x26e CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_line    0x00001510      0x809 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
- .debug_line    0x00001d19      0x452 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x0000216b       0x79 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
- .debug_line    0x000021e4      0x5bc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x000027a0      0x72c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00002ecc      0xd4b CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x00003c17      0x61a CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00004231      0xc71 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x00004ea2     0x4a60 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_line    0x00009902     0x1d15 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_line    0x0000b617     0x443a CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+.debug_line     0x00000000     0xfa75
+ .debug_line    0x00000000      0x255 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
+ .debug_line    0x00000255      0xb85 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00000dda      0x1a5 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x00000f7f      0x347 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x000012c6      0x26e CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_line    0x00001534      0x809 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+ .debug_line    0x00001d3d      0x452 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x0000218f       0x79 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
+ .debug_line    0x00002208      0x5bc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x000027c4      0x72c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x00002ef0      0xd4b CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x00003c3b      0x61a CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00004255      0xc71 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x00004ec6     0x4a60 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_line    0x00009926     0x1d15 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_line    0x0000b63b     0x443a CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 
 .debug_str      0x00000000     0x3c32
  .debug_str     0x00000000      0x29e CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
@@ -2074,33 +2073,33 @@ LOAD c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb
  .comment       0x00000045       0x46 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .comment       0x00000045       0x46 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 
-.debug_frame    0x00000000     0x2328
- .debug_frame   0x00000000       0x30 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
- .debug_frame   0x00000030       0x8c CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x000000bc       0x28 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x000000e4       0xc0 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_frame   0x000001a4       0x30 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_frame   0x000001d4       0xfc CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
- .debug_frame   0x000002d0       0x94 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
- .debug_frame   0x00000364      0x1cc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_frame   0x00000530      0x19c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_frame   0x000006cc      0x140 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_frame   0x0000080c       0xe4 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_frame   0x000008f0      0x184 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_frame   0x00000a74      0xb04 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_frame   0x00001578      0x40c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_frame   0x00001984      0x5d4 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_frame   0x00001f58       0xac c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00002004       0x50 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00002054       0xc4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00002118       0x24 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunsdfsi.o)
- .debug_frame   0x0000213c       0x2c c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
- .debug_frame   0x00002168       0x2c c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
- .debug_frame   0x00002194       0xb0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
- .debug_frame   0x00002244       0x5c c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
- .debug_frame   0x000022a0       0x20 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
- .debug_frame   0x000022c0       0x34 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
- .debug_frame   0x000022f4       0x34 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+.debug_frame    0x00000000     0x232c
+ .debug_frame   0x00000000       0x34 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/gpio.c.obj
+ .debug_frame   0x00000034       0x8c CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x000000c0       0x28 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x000000e8       0xc0 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x000001a8       0x30 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x000001d8       0xfc CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/tim.c.obj
+ .debug_frame   0x000002d4       0x94 CMakeFiles/EmbeddedRobotArm.elf.dir/Core/Src/usart.c.obj
+ .debug_frame   0x00000368      0x1cc CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_frame   0x00000534      0x19c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_frame   0x000006d0      0x140 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_frame   0x00000810       0xe4 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_frame   0x000008f4      0x184 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_frame   0x00000a78      0xb04 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_frame   0x0000157c      0x40c CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_frame   0x00001988      0x5d4 CMakeFiles/EmbeddedRobotArm.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_frame   0x00001f5c       0xac c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00002008       0x50 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00002058       0xc4 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000211c       0x24 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x00002140       0x2c c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
+ .debug_frame   0x0000216c       0x2c c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+ .debug_frame   0x00002198       0xb0 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+ .debug_frame   0x00002248       0x5c c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .debug_frame   0x000022a4       0x20 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+ .debug_frame   0x000022c4       0x34 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+ .debug_frame   0x000022f8       0x34 c:/progra~2/armgnu~1/125863~1.3re/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
 
 .debug_loclists
                 0x00000000     0x86fb
