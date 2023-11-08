@@ -1,3 +1,0 @@
-C:/Users/Haoran/Prj/CLionProjects/EmbeddedRobotArm/cmake-build-debug/CMakeFiles/EmbeddedRobotArm.elf.dir
-C:/Users/Haoran/Prj/CLionProjects/EmbeddedRobotArm/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Haoran/Prj/CLionProjects/EmbeddedRobotArm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
