@@ -1,4 +1,4 @@
-# EmbeddedRobotArm
+# EmbeddedRoboticArm
 This repository is aimed for Comprehensive Training on Measurement and Control of Mechatronics Course Project at HUST.
 
 ## Overview
