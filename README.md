@@ -2,6 +2,8 @@
 This repository is aimed for Comprehensive Training on Measurement and Control of Mechatronics Course Project at HUST.
 
 ## Overview
+> In this project, the unit of length is **mm**
+
 In this course, we were required to start with some projects that are consist of mechanics, electrical circuits, and control systems. As a result, I decided to develop a cost-effective six-axis robotic arm.
 
 This robotic arm contains six rotatable joints, allowing it to move as flexibly as possible within the workspace. The DH parameters of the robotic arm are as follows:
@@ -13,7 +15,7 @@ This robotic arm contains six rotatable joints, allowing it to move as flexibly 
 | 2 | 0 | -104 | 0 | $\theta_2$ |
 | 3 | 0 | -96.4 | 0 | $\theta_3$ |
 | 4 | 0 | 0 | $\pi\over2$ | $\theta_4$ |
-| 5 | 80.66 | 0 | -$\pi\over2$ | $\theta_5$ |
+| 5 | 80.66 | 0 | $-{{\pi}\over{2}}$ | $\theta_5$ |
 | 6 | 27.5 | 0 | 0 | 0 | $\theta_6$ |
 
 **Modified DH:**
@@ -24,7 +26,7 @@ This robotic arm contains six rotatable joints, allowing it to move as flexibly 
 | 3 | 0 | 104 | 0 | $\theta_3$ |
 | 4 | 0 | 96.4 | 0 | $\theta_4$ |
 | 5 | 80.66 | 0 | $\pi\over2$  | $\theta_5$ |
-| 6 | 27.5 | 0 | -$\pi\over2$  | $\theta_6$ |
+| 6 | 27.5 | 0 | $-{{\pi}\over{2}}$  | $\theta_6$ |
 
 In this project, I used Standard DH because it can fit my robotic arm better.
 
