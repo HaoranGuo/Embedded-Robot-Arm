@@ -46,7 +46,9 @@ I regulated some port communication command so that people can easily debug and 
 The command start with `+` and end with `,`
 
 ```+led,0,1, # open the led0```
+
 ```+ser,0,1000, # set the servo0 pulse to 1000 (1ms)```
+
 ```+servos,pulse0,pulse1,pulse2,pulse3,pulse4,pulse5, # control all the servos together```
 
 Please note that I used a different servo at the sixth position. So the code will be a little different in this section.
