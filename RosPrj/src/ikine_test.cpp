@@ -60,39 +60,54 @@ int main(int argc, char** argv){
 
     ur3.moveJ(angle0);
 
-    ros::Duration(2).sleep();
+    ros::Duration(1).sleep();
+
+    ur3.moveJ(200, 0, 60, PI, 0, 0);
+
+    ros::Duration(1).sleep();
 
     while(ros::ok()){
-        // ur3.moveJ(T);
-        ur3.moveJ(200, 0, 0, PI, 0, 0);
-        ur3.printResult();
-        ur3.printPossibleResult();
-
-        ros::Duration(2).sleep();
-
-        ur3.moveJ(-50, 0, 100, PI, 0, 0);
-        ur3.printResult();
-        ur3.printPossibleResult();
-
-        // 延时2s
-        // ros::Duration(2).sleep();
-
-        // ur3.moveL(150, 0, 80, 0, 0, 0);
-
-        // ur3.moveJ(100, 0, 80, PI, 0, -PI/2);
-
-        // ur3.printResult();
-        // ur3.printPossibleResult();
-        // ur3.printBestResult();
-
-        // ros::Duration(2).sleep();
-
-        // ur3.moveJ(160, -50, 100, 0, 0, 0);
-        // ur3.printResult();
-        // ur3.printPossibleResult();
-        // ur3.printBestResult();
-
+        ur3.draw_word("/home/haoran/catkin_ws/src/embeddedrobotarm/data/hust.txt", 50, 120, 0);
         ros::spin();
     }
+
+    // while(ros::ok()){
+    //     // ur3.moveJ(T);
+    //     ur3.moveJ(250, 0, 0, PI, 0, 0);
+    //     ur3.printResult();
+    //     ur3.printPossibleResult();
+
+    //     ros::Duration(2).sleep();
+
+    //     ur3.moveL(200, 0, 0, PI, 0, 0);
+
+    //     ros::Duration(2).sleep();
+
+    //     ur3.moveL(200, 50, 0, PI, 0, 0);
+
+    //     // ur3.moveJ(-50, 0, 100, PI, 0, 0);
+    //     // ur3.printResult();
+    //     // ur3.printPossibleResult();
+
+    //     // 延时2s
+    //     // ros::Duration(2).sleep();
+
+    //     // ur3.moveL(150, 0, 80, 0, 0, 0);
+
+    //     // ur3.moveJ(100, 0, 80, PI, 0, -PI/2);
+
+    //     // ur3.printResult();
+    //     // ur3.printPossibleResult();
+    //     // ur3.printBestResult();
+
+    //     // ros::Duration(2).sleep();
+
+    //     // ur3.moveJ(160, -50, 100, 0, 0, 0);
+    //     // ur3.printResult();
+    //     // ur3.printPossibleResult();
+    //     // ur3.printBestResult();
+
+    //     ros::spin();
+    // }
     return 0;
 }

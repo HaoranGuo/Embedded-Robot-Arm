@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   tf
   serial
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -49,6 +50,13 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
+
+add_message_files(
+  FILES
+  cmd.msg
+)
+
+
 ## Generate messages in the 'msg' folder
 # add_message_files(
 #   FILES
@@ -71,10 +79,11 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   geometry_msgs#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  geometry_msgs
+  std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -108,7 +117,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES embeddedrobotarm
-#  CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs tf
+  CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs tf message_runtime
 #  DEPENDS system_lib
 )
 
@@ -121,6 +130,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  include
 )
 
 add_executable(test_serial_node src/serial_node.cpp src/test.cpp)
@@ -128,6 +138,12 @@ target_link_libraries(test_serial_node ${catkin_LIBRARIES})
 
 add_executable(ikine_test src/ikine_test.cpp src/kinetic.cpp)
 target_link_libraries(ikine_test ${catkin_LIBRARIES})
+
+add_executable(robot_node src/robot_node.cpp src/kinetic.cpp)
+target_link_libraries(robot_node ${catkin_LIBRARIES})
+
+add_executable(node_pub src/node_pub.cpp)
+target_link_libraries(node_pub ${catkin_LIBRARIES})
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

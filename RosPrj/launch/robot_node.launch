@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="embedded_robot_arm" type="robot_node" name="robot_node" output="screen"/>
+</launch>

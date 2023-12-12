@@ -1,12 +1,16 @@
 #ifndef __KINETIC_EMBEDDED_ROBOT_ARM_H__
 #define __KINETIC_EMBEDDED_ROBOT_ARM_H__
 
+#include <ros/ros.h>
 #include <iostream>
+#include <string>
+#include <fstream>
 #include <eigen3/Eigen/Dense>
 #include <math.h>
 #include <vector>
 #include <thread>
 #include "serial/serial.h"
+#include "embedded_robot_arm/cmd.h"
 
 #define PI (3.14159265358979324f)
 
@@ -30,6 +34,7 @@ class Kinetic{
         std::vector<std::vector<double>> _possible_result;
         std::vector<double> _last_angle;
         std::vector<double> _best_angle;
+        double _last_pose[6];
 
         serial::Serial ser;
 
@@ -41,6 +46,10 @@ class Kinetic{
         double getTheta2(double theta1,double theta3,double theta6);
         double getTheta4(double theta1,double theta2,double theta3,double theta6);
         double normalize_angle(double angle, int flag);
+
+        ros::NodeHandle nh;
+
+        ros::Subscriber cmd_sub;
 
     public:
         Kinetic(std::vector<double> a, std::vector<double> d, std::vector<double> alpha);
@@ -75,12 +84,16 @@ class Kinetic{
         bool moveJ(double x, double y, double z, double rx, double ry, double rz);
         bool moveJ(Eigen::Matrix<double, 4, 4> T);
 
-        bool moveL(double angle[6]);
-        bool moveL(double x, double y, double z, double rx, double ry, double rz);
-        bool moveL(Eigen::Matrix<double, 4, 4> T);
+        bool moveL(double angle[6], int speed);
+        bool moveL(double x, double y, double z, double rx, double ry, double rz, int speed);
+        bool moveL(Eigen::Matrix<double, 4, 4> T, int speed);
 
         bool servos_move(int pulse[6]);
         void init_Serial();
+
+        void draw_word(const char *path, double z, double scale, bool flag);
+
+        void cmdCallback(const embedded_robot_arm::cmd::ConstPtr cmd);
 
 };
 

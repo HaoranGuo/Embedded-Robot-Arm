@@ -22,16 +22,69 @@ Kinetic::Kinetic(std::vector<double> a, std::vector<double> d, std::vector<doubl
 
     _T = Eigen::Matrix4d::Identity();
 
-    _last_angle.push_back(0);
-    _last_angle.push_back(0);
-    _last_angle.push_back(0);
-    _last_angle.push_back(0);
-    _last_angle.push_back(0);
-    _last_angle.push_back(0);
+    cmd_sub = nh.subscribe("/robot_cmd", 1000, &Kinetic::cmdCallback, this);
 }
 
 Kinetic::~Kinetic(){
     ser.close();
+}
+
+void Kinetic::cmdCallback(const embedded_robot_arm::cmd::ConstPtr cmd){
+    std::cout << "cmd received" << std::endl;
+    // 获取cmd中的string数据，并储存
+    std::string cmd_str = cmd->cmd;
+    int mode = cmd->mode;
+    std::vector<double> data = cmd->data;
+
+    // 判断cmd_str的值，执行相应的操作
+    if (cmd_str == "moveJ"){
+        if (mode == 1){
+            if (data.size() != 6){
+                std::cout << "data size error!" << std::endl;
+                return;
+            }
+            double angle[6] = {0};
+            for (int i = 0; i < 6; ++i){
+                angle[i] = data[i];
+            }
+            moveJ(angle);
+        }
+        else{
+            if (data.size() != 6){
+                std::cout << "data size error!" << std::endl;
+                return;
+            }
+            moveJ(data[0], data[1], data[2], data[3], data[4], data[5]);
+        }
+    }
+    else if (cmd_str == "moveL"){
+        if (mode == 1){
+            if (data.size() != 6){
+                std::cout << "data size error!" << std::endl;
+                return;
+            }
+            double angle[6] = {0};
+            for (int i = 0; i < 6; ++i){
+                angle[i] = data[i];
+            }
+            moveL(angle, 20);
+        }
+        else{
+            if (data.size() != 6){
+                std::cout << "data size error!" << std::endl;
+                return;
+            }
+            moveL(data[0], data[1], data[2], data[3], data[4], data[5], 20);
+        }
+    }
+    else if (cmd_str == "test"){
+        std::cout << "Received test cmd" << std::endl;
+        std::cout << "mode: " << mode << std::endl;
+        for (int i = 0; i < data.size(); i++){
+            std::cout << data[i] << " ";
+        }
+        std::cout << std::endl; 
+    }
 }
 
 void Kinetic::printDH() {
@@ -594,6 +647,12 @@ bool Kinetic::moveJ(double angle[6]){
     }
     serialMove(angle_t);
     _last_angle = angle_t;
+    forward_Kine(angle_t, _T);
+    Eigen::Matrix<double, 6, 1> pose;
+    pose = T2pose(_T);
+    for (int i = 0; i < 6; ++i){
+        _last_pose[i] = pose[i];
+    }
     return true;
 }
 
@@ -602,6 +661,13 @@ bool Kinetic::moveJ(double x, double y, double z, double rx, double ry, double r
     setT(T);
     if (get_best_angle()){
         serialMove(_best_angle);
+        _last_angle = _best_angle;
+        _last_pose[0] = x;
+        _last_pose[1] = y;
+        _last_pose[2] = z;
+        _last_pose[3] = rx;
+        _last_pose[4] = ry;
+        _last_pose[5] = rz;
         return true;
     }
     else{
@@ -613,6 +679,12 @@ bool Kinetic::moveJ(Eigen::Matrix<double, 4, 4> T) {
     setT(T);
     if (get_best_angle()){
         serialMove(_best_angle);
+        _last_angle = _best_angle;
+        Eigen::Matrix<double, 6, 1> pose;
+        pose = T2pose(T);
+        for (int i = 0; i < 6; ++i){
+            _last_pose[i] = pose[i];
+        }
         return true;
     }
     else{
@@ -688,38 +760,59 @@ void Kinetic::printBestResult(){
 
 
 
-bool Kinetic::moveL(double x, double y, double z, double rx, double ry, double rz){
-    Eigen::Matrix4d last_T;
-    if (forward_Kine(_last_angle, last_T)){
-        Eigen::Matrix<double, 6, 1> pose_t = T2pose(last_T);
-        // 插值，总共插值100次
-        for (int i = 0; i < 100; ++i){
-            Eigen::Matrix<double, 6, 1> pose;
-            pose << pose_t(0) + (x - pose_t(0)) / 100 * i, 
-                    pose_t(1) + (y - pose_t(1)) / 100 * i, 
-                    pose_t(2) + (z - pose_t(2)) / 100 * i, 
-                    pose_t(3) + (rx - pose_t(3)) / 100 * i, 
-                    pose_t(4) + (ry - pose_t(4)) / 100 * i, 
-                    pose_t(5) + (rz - pose_t(5)) / 100 * i;
-            Eigen::Matrix<double, 4, 4> T = pose2T(pose);
-            std::cout << i << std::endl;
-            if (!moveJ(T)){
-                std::cout << "moveJ error!" << std::endl;
-                return false;
+bool Kinetic::moveL(double x, double y, double z, double rx, double ry, double rz, int speed){
+    // Eigen::Matrix4d last_T;
+    // if (forward_Kine(_last_angle, last_T)){
+        int cnt = 0;
+        // Eigen::Matrix<double, 6, 1> pose_t = T2pose(last_T);
+
+        double tx, ty, tz, trx, tryy, trz;
+        // 插值，总共插值20次
+        for (int i = 0; i < speed; ++i){
+            // Eigen::Matrix<double, 6, 1> pose;
+            // pose << pose_t(0) + (x - pose_t(0)) / 20 * i, 
+            //         pose_t(1) + (y - pose_t(1)) / 20 * i, 
+            //         pose_t(2) + (z - pose_t(2)) / 20 * i, 
+            //         pose_t(3) + (rx - pose_t(3)) / 20 * i, 
+            //         pose_t(4) + (ry - pose_t(4)) / 20 * i, 
+            //         pose_t(5) + (rz - pose_t(5)) / 20 * i;
+            // Eigen::Matrix<double, 4, 4> T = pose2T(pose);
+            tx = _last_pose[0] + (x - _last_pose[0]) / speed * i;
+            ty = _last_pose[1] + (y - _last_pose[1]) / speed * i;
+            tz = _last_pose[2] + (z - _last_pose[2]) / speed * i;
+            trx = _last_pose[3] + (rx - _last_pose[3]) / speed * i;
+            tryy = _last_pose[4] + (ry - _last_pose[4]) / speed * i;
+            trz = _last_pose[5] + (rz - _last_pose[5]) / speed * i;
+
+            // std::cout << i << std::endl;
+            if (!moveJ(tx, ty, tz, trx, tryy, trz)){
+                cnt++;
+                std::cout << "moveL cannot reach!" << cnt << std::endl;
+
+                if (cnt >= 5){
+                    std::cout << "moveL error!" << std::endl;
+                    return false;
+                }
+
+                continue;
             }
-            // 延迟0.01s
-            std::this_thread::sleep_for(std::chrono::milliseconds(10));
+
+            // 延迟0.05s
+            std::this_thread::sleep_for(std::chrono::milliseconds(50));
+            if (i >= speed - 1){
+                return true;
+            }
         }
-    }
-    else{
-        return false;
-    }
+    // }
+    // else{
+    //     return false;
+    // }
 }
 
-bool Kinetic::moveL(Eigen::Matrix<double, 4, 4> T){
+bool Kinetic::moveL(Eigen::Matrix<double, 4, 4> T, int speed){
     Eigen::Matrix4d last_T;
     Eigen::Matrix<double, 6, 1> current_pose = T2pose(T);
-    if (moveL(current_pose[0], current_pose[1], current_pose[2], current_pose[3], current_pose[4], current_pose[5])){
+    if (moveL(current_pose[0], current_pose[1], current_pose[2], current_pose[3], current_pose[4], current_pose[5], speed)){
         return true;
     }
     else{
@@ -727,16 +820,70 @@ bool Kinetic::moveL(Eigen::Matrix<double, 4, 4> T){
     }
 }
 
-bool Kinetic::moveL(double angle[6]){
+bool Kinetic::moveL(double angle[6], int speed){
     std::vector<double> angle_t;
     for (int i = 0; i < 6; ++i){
         angle_t.push_back(angle[i]);
     }
     Eigen::Matrix4d current_T;
     if (forward_Kine(angle_t, current_T)){
-        return moveL(current_T);
+        return moveL(current_T, speed);
     }
     else{
         return false;
+    }
+}
+
+void Kinetic::draw_word(const char *path, double z, double scale, bool flag){
+    // 读取txt文件，其中每行分别为x,y,flag
+    std::ifstream infile;
+    infile.open(path);
+    std::string line;
+    std::vector<std::vector<double>> points;
+    while (std::getline(infile, line)){
+        std::istringstream iss(line);
+        std::vector<double> point;
+        double x, y, flag;
+        if (!(iss >> x >> y >> flag)){
+            break;
+        }
+        point.push_back((2-y)*scale);
+        point.push_back((0.5-x)*scale);
+        point.push_back(flag);
+        points.push_back(point);
+    }
+
+    for(int i = 0; i < points.size(); i++){
+        std::cout << "points " << i << ": " << points[i][0] << " " << points[i][1] << " " << points[i][2] << std::endl;
+
+        if (i == 0){
+            std::cout << "1" << std::endl;
+            moveJ(points[i][0], points[i][1], z + 10, PI, 0, 0);
+            // 延迟1s
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
+            std::cout << "2" << std::endl;
+            moveL(points[i][0], points[i][1], z, PI, 0, 0, 10);
+            std::cout << "3" << std::endl;
+        }
+        else{
+            if (points[i][2] == 0){
+                if (flag){
+                    double dist = sqrt((points[i][0] - points[i-1][0])*(points[i][0] - points[i-1][0]) + (points[i][1] - points[i-1][1])*(points[i][1] - points[i-1][1]));
+                    int speed = int(dist * 2);
+                    if (speed < 10){
+                        speed = 10;
+                    }
+                    moveL(points[i][0], points[i][1], z, PI, 0, 0, speed);  
+                }
+                else{
+                    moveL(points[i][0], points[i][1], z, PI, 0, 0, 20);
+                }
+            }
+            else{
+                moveL(points[i-1][0], points[i-1][1], z + 10, PI, 0, 0, 5);
+                moveL(points[i][0], points[i][1], z + 10, PI, 0, 0, 5);
+                moveL(points[i][0], points[i][1], z, PI, 0, 0, 10);
+            }
+        }
     }
 }
