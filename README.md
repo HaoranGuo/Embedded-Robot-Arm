@@ -1,8 +1,10 @@
-# EmbeddedRoboticArm
+# Embedded Robot Arm
 This repository is aimed for Comprehensive Training on Measurement and Control of Mechatronics Course Project at HUST.
 
 ## Overview
 > In this project, the unit of length is **mm**
+
+![robot](img/Robot_arm.jpg)
 
 In this course, we were required to start with some projects that are consist of mechanics, electrical circuits, and control systems. As a result, I decided to develop a cost-effective six-axis robotic arm.
 
@@ -32,6 +34,8 @@ In this project, I used Standard DH because it can fit my robotic arm better.
 
 ## Model
 Solidworks assemble model are presented in this folder. You can easily refer to the model by opening the file `Km1机械臂完整体.SLDASM` or `Km1机械臂完整体.STEP`. I built this model with `SOLIDWORDS 2022`.
+
+![model](img/solidworks_model.jpg)
 
 ## Hardware
 In this project, I used EmbedFire's STM32 board STM32F103 Mini. It has an **STM32F103RCT6**. The schematic of this board is shown in this folder.
@@ -69,9 +73,18 @@ This code is aimed to calculate the inverse kinetic solution. You can use it in 
 
 This code is aimed to control the robotic arm. You can use it in a simple way.
 
-1. Input the DH parameter.
-2. Initial the seiral function.
-3. Use `moveJ` to move to a designated pose. You can input angle, homogeneous transformation matrix or pose `(x, y, z, rx, ry, rz)`. **Please note that I do not set a limitation in angle moving way.**
+- Input the DH parameter.
+- Initial the seiral function.
+- Use `moveJ` to move to a designated pose. You can input angle, homogeneous transformation matrix or pose `(x, y, z, rx, ry, rz)`. **Please note that I do not set a limitation in angle moving way.**
+- Use `moveL` to move to a designated pose. You can input angle, homogeneous transformation matrix or pose `(x, y, z, rx, ry, rz)`. **Please note that I do not set a limitation in angle moving way.**
+
+I also added some necessary module to communicate and drive servos and achieve some interesting applications.
+
+- In `scripts/get_pixel.py`, I used `OpenCV` to get the pixel coordinate of the object. You can add the path manually and then drive the robot arm to the designated pose through function `draw_word`.
+
+![daxue](img/daxue.jpg)
+![robot_daxue](img/1.gif)
+<video src="img/1.mp4" controls="controls" width="640" height="360">Your browser does not support the video tag.</video>
 
 ## Manuscript
 This PDF documents my process for deriving kinematic inverse solutions. The process references this [website](https://www.cnblogs.com/mightycode/p/9095059.html).
