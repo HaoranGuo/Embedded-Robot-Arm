@@ -84,6 +84,7 @@ I also added some necessary module to communicate and drive servos and achieve s
 
 ![daxue](img/daxue.jpg)
 ![robot_daxue](img/1.gif)
+<video src="img/controller.mp4"></video>
 
 ## Manuscript
 This PDF documents my process for deriving kinematic inverse solutions. The process references this [website](https://www.cnblogs.com/mightycode/p/9095059.html).
