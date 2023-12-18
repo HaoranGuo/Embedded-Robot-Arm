@@ -84,7 +84,14 @@ I also added some necessary module to communicate and drive servos and achieve s
 
 ![daxue](img/daxue.jpg)
 ![robot_daxue](img/1.gif)
-<video src="img/controller.mp4"></video>
+
+- In `scripts/ros_gamepad.py`, we fulfill the function of controlling the robot arm through a simple Xbox Controller from Microsoft. Wired or wireless controllers are both supported. We recommend using a wired controller because it is more stable. Use the left joystick to control the position of x and y, and use the right joystick to control the position of z and the rotation of the end effector. Button A and Y are used to control the rotation of roll. Button B and X are used to control the rotation of pitch. Button LB and RB are used to control the rotation of yaw.
+
+![controller](img/controller.gif)
+
+- In `scripts/finger.py`, we fulfill the function of moving the robot arm through your finger position. We use `mediapipe` to get the position of your finger. If you try to put your thumb and index finger together, the robot arm will move to the designated pose. Plus, in order to get 3D position, we use the length of your upper middle finger in the video to calculate the distance between your finger and the camera. You can change those parameters in `scripts/finger.py`.
+
+![finger](img/finger.gif)
 
 ## Manuscript
 This PDF documents my process for deriving kinematic inverse solutions. The process references this [website](https://www.cnblogs.com/mightycode/p/9095059.html).

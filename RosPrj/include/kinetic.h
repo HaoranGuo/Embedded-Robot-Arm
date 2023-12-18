@@ -51,6 +51,9 @@ class Kinetic{
 
         ros::Subscriber cmd_sub;
 
+        ros::Publisher pos_pub;
+        ros::Publisher angle_pub;
+
     public:
         Kinetic(std::vector<double> a, std::vector<double> d, std::vector<double> alpha);
         ~Kinetic();
@@ -94,6 +97,7 @@ class Kinetic{
         void draw_word(const char *path, double z, double scale, bool flag);
 
         void cmdCallback(const embedded_robot_arm::cmd::ConstPtr cmd);
+        void publishMsg();
 
 };
 

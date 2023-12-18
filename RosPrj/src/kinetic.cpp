@@ -23,10 +23,28 @@ Kinetic::Kinetic(std::vector<double> a, std::vector<double> d, std::vector<doubl
     _T = Eigen::Matrix4d::Identity();
 
     cmd_sub = nh.subscribe("/robot_cmd", 1000, &Kinetic::cmdCallback, this);
+
+    pos_pub = nh.advertise<embedded_robot_arm::cmd>("/robot_pos", 1000);
+    angle_pub = nh.advertise<embedded_robot_arm::cmd>("/robot_angle", 1000);
 }
 
 Kinetic::~Kinetic(){
     ser.close();
+}
+
+void Kinetic::publishMsg(){
+    embedded_robot_arm::cmd pos;
+    embedded_robot_arm::cmd angle;
+    pos.cmd = "pos";
+    angle.cmd = "angle";
+    pos.mode = -1;
+    angle.mode = -1;
+    for (int i = 0; i < 6; ++i){
+        pos.data.push_back(_last_pose[i]);
+        angle.data.push_back(_last_angle[i]);
+    }
+    pos_pub.publish(pos);
+    angle_pub.publish(angle);
 }
 
 void Kinetic::cmdCallback(const embedded_robot_arm::cmd::ConstPtr cmd){
@@ -111,17 +129,18 @@ void Kinetic::printDH() {
 Eigen::Matrix4d Kinetic::getTx(double a,double alpha,double d,double theta){
     Eigen::Matrix4d Tx;
     double T11 = cos(theta);
-    double T12 = -1*sin(theta);
-    double T14 = a;
-    double T21 = sin(theta)*cos(alpha);
+    double T12 = -1*sin(theta)*cos(alpha);
+    double T13 = sin(theta)*sin(alpha);
+    double T14 = a*cos(theta);
+    double T21 = sin(theta);
     double T22 = cos(theta)*cos(alpha);
-    double T23 = -1*sin(alpha);
-    double T24 = -1*d*sin(alpha);
-    double T31 = sin(theta)*sin(alpha);
-    double T32 = cos(theta)*sin(alpha);
+    double T23 = -1*cos(theta)*sin(alpha);
+    double T24 = a*sin(theta);
+    double T31 = 0;
+    double T32 = sin(alpha);
     double T33 = cos(alpha);
-    double T34 = d*cos(alpha);
-    Tx << T11  ,T12  ,0    ,T14  ,
+    double T34 = d;
+    Tx << T11  ,T12  ,T13    ,T14  ,
             T21  ,T22  ,T23  ,T24  ,
             T31  ,T32  ,T33  ,T34  ,
             0  ,  0  ,  0  ,  1;

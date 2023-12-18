@@ -13,9 +13,14 @@ int main(int argc, char** argv){
     double angle0[6] = {0, -PI/2, 0, -PI/2, 0, 0};
     ur3.init_Serial();
     ur3.moveJ(angle0);
-    ros::Duration(1).sleep();
+    // ros::Duration(0.5).sleep();
+    // ur3.moveJ(100, -50, 200, 0, 0, 0);
+    ros::Duration(0.5).sleep();
+    ros::Rate loop_rate(5);
     while(ros::ok()){
-        ros::spin();
+        ur3.publishMsg();
+        ros::spinOnce();
+        loop_rate.sleep();
     }
     return 0;
 }
