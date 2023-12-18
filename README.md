@@ -100,7 +100,7 @@ I also added some necessary module to communicate and drive servos and achieve s
 
 In the following two applications, I indeed used `ROS` Subscriber and Publisher to achieve the communication between the C++ code and Python code. 
 
-![ROS](img/ros.png)
+![ROS](img/ROS.png)
 
 - In `scripts/ros_gamepad.py`, we fulfill the function of controlling the robot arm through a simple Xbox Controller from Microsoft. Wired or wireless controllers are both supported. We recommend using a wired controller because it is more stable. Use the left joystick to control the position of x and y, and use the right joystick to control the position of z and the rotation of the end effector. Button A and Y are used to control the rotation of roll. Button B and X are used to control the rotation of pitch. Button LB and RB are used to control the rotation of yaw.
 
