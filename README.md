@@ -112,3 +112,11 @@ In the following two applications, I indeed used `ROS` Subscriber and Publisher 
 
 ## Manuscript
 This PDF documents my process for deriving kinematic inverse solutions. The process references this [website](https://www.cnblogs.com/mightycode/p/9095059.html).
+
+# Thanks
+Thanks to my teammates, **Haoxiang Lian** and **Jingyuan Ma**. They helped me a lot in this project. Without them, I cannot finish this project. I feel lucky and privileged to work with them.
+
+Thanks to my teacher, **[Prof. Lingsong He](https://mse.hust.edu.cn/info/1149/1499.htm)**, . He gave us a lot of help in this project. He also gave us a lot of advice on how to improve our robotic arm and how to improve our code.
+
+![Haoxiang Lian](img/lhx.jpg)
+![Jingyuan Ma](img/mjy.jpg)
